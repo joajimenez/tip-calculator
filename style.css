@@ -4,10 +4,12 @@ h1,
 h2,
 h3 {
   font-family: 'Roboto Condensed', sans-serif;
+  color: #8cf8a2;
 }
 
 body {
   text-align: center;
+  background-color: #00c0c7;
 }
 
 #title {
@@ -17,22 +19,28 @@ body {
   width: 45%;
 }
 
-#content-container {
-  width: 90%;
+#icon {
+  width: 80px;
+  height: 80px;
 }
 
 #main-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: solid 4px black;
   border-radius: 10px;
-  width: 45%;
-  padding: 2rem 0;
+  padding: 0.5rem 0;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 95%;
+  height: 95%;
+  background-color: #242348;
+}
+
+#content-container {
+  width: 90%;
 }
 
 #bill-amount-container {
@@ -52,13 +60,14 @@ hr {
   text-align: center;
   margin-left: 0;
   margin-top: 0%;
-  background-color: #8cf8a2;
+  color: #8cf8a2;
 }
 
 #percentage-tip-container {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  width: 100%;
 }
 
 #tip-amount-display-container {
@@ -80,6 +89,11 @@ hr {
   text-align: right;
   align-self: flex-end;
   padding: 1px 2px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+  display: inline-block;
+  color: azure;
 }
 
 #tip-amount-display {
@@ -90,6 +104,11 @@ hr {
   text-align: right;
   align-self: flex-end;
   padding: 1px 2px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+  display: inline-block;
+  color: azure;
 }
 
 input {
@@ -101,6 +120,8 @@ input {
   border-color: #8cf8a2;
   font-size: 2rem;
   align-self: flex-end;
+  background: transparent;
+  color: azure;
 }
 
 input:focus {
@@ -113,9 +134,12 @@ button {
   padding: 18px 12px;
   border-radius: 8px;
   border: none;
+  width: 100%;
+  font-size: x-large;
+  font-weight: bold;
 }
 
 button:hover {
-  color: white;
-  background-color: blue;
+  text-decoration: underline;
+  cursor: pointer;
 }
