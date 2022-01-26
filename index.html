@@ -2,42 +2,51 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Tips Calculator</title>
   </head>
   <body>
     <div id="main-container">
-      <h1>Tip Calculator</h1>
+      <h1 id="title">TIP.calc</h1>
       <div id="content-container">
         <div id="bill-amount-container">
-          <h3>Bill amount</h3>
           <input
             type="number"
             id="bill-amount-input"
             class="input-box"
-            value="100"
+            title="bill-amount"
+            value="1248.72"
+            placeholder="1,248.72"
           />
+
+          <h3>BILL AMOUNT</h3>
         </div>
         <div id="percentage-tip-container">
-          <h3>Percentage tip</h3>
           <input
             type="number"
             id="percentage-tip-input"
             class="input-box"
-            value="15"
+            title="percentage"
+            placeholder="10"
+            value="10"
           />
         </div>
+        <h3>TIP PERCENTAGE (%)</h3>
         <div id="tip-amount-display-container">
-          <h3>Tip amount:</h3>
-          <div id="tip-amount-display" type="number">$00</div>
+          <div id="tip-amount-display" type="number">$124.8</div>
+          <hr />
+          <h3>TIP AMOUNT</h3>
         </div>
         <div id="total-amount-display-container">
-          <h3>Total:</h3>
-          <div id="total-amount-display" type="number">$00</div>
+          <div id="total-amount-display" type="number" title="display">
+            $1,373.52
+          </div>
+          <hr />
+          <h3>TOTAL</h3>
         </div>
-        <button id="calculate-btn">Calculate</button>
+        <button id="calculate-btn">CALCULATE</button>
       </div>
     </div>
     <script src="/scipt.js"></script>

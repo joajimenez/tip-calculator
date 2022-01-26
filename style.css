@@ -1,15 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto+Condensed:wght@700&display=swap');
+
+h1,
+h2,
+h3 {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+  text-align: center;
+}
+
+#title {
+  text-align: left;
+  margin-right: 140px;
+  margin-top: 0%;
+  width: 45%;
+}
+
+#content-container {
+  width: 90%;
+}
+
 #main-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   border: solid 4px black;
+  border-radius: 10px;
   width: 45%;
   padding: 2rem 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #bill-amount-container {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+}
+
+h3 {
+  padding: 0%;
+  margin-top: 3%;
+  text-align: left;
+}
+
+hr {
+  width: 100%;
+  text-align: center;
+  margin-left: 0;
+  margin-top: 0%;
+  background-color: #8cf8a2;
 }
 
 #percentage-tip-container {
@@ -20,30 +63,59 @@
 
 #tip-amount-display-container {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 #total-amount-display-container {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 
 #total-amount-display {
-  width: 20%;
-  padding: 12px 20px;
+  width: 100%;
   margin: 8px 0;
-  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  font-size: 3rem;
+  text-align: right;
+  align-self: flex-end;
+  padding: 1px 2px;
 }
 
 #tip-amount-display {
-  width: 20%;
-  padding: 12px 20px;
+  width: 100%;
   margin: 8px 0;
-  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  font-size: 3rem;
+  text-align: right;
+  align-self: flex-end;
+  padding: 1px 2px;
 }
 
-.input-box {
-  width: 20%;
-  padding: 7px 20px;
-  margin: 8px 0;
-  box-sizing: content-box;
+input {
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+  text-align: right;
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: #8cf8a2;
+  font-size: 2rem;
+  align-self: flex-end;
+}
+
+input:focus {
+  border-color: green;
+}
+
+button {
+  background-color: #8cf8a2;
+  font-family: 'Roboto Condensed', sans-serif;
+  padding: 18px 12px;
+  border-radius: 8px;
+  border: none;
+}
+
+button:hover {
+  color: white;
+  background-color: blue;
 }
